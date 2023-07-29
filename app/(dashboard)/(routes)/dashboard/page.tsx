@@ -13,13 +13,13 @@ export default function HomePage() {
 
   return (
     <div>
-      <div className="mb-8 space-y-4">
-        <h2 className="text-2xl md:text-4xl font-bold text-center">
-          Explorez la puissance de l'IA
+     <div className="mb-8 space-y-4">
+       <h2 className="text-2xl md:text-4xl font-bold text-center">
+          Explorez la puissance de l&apos;IA
         </h2>
-        <p className="text-muted-foreground font-light text-sm md:text-lg text-center">
-          Discutez avec l'IA la plus intelligente - Découvrez la puissance de l'IA
-        </p>
+           <p className="text-muted-foreground font-light text-sm md:text-lg text-center">
+              Discutez avec l&apos;IA la plus intelligente - Découvrez la puissance de l&apos;IA
+          </p>
       </div>
       <div className="px-4 md:px-20 lg:px-32 space-y-4">
         {tools.map((tool) => (

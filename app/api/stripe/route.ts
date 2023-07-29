@@ -46,7 +46,7 @@ export async function GET() {
               name: "Ai-wink Pro",
               description: "Générations d'IA illimitées"
             },
-            unit_amount: 2000,
+            unit_amount: 1000,
             recurring: {
               interval: "month"
             }
