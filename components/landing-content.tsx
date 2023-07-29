@@ -6,7 +6,7 @@ const testimonials = [
   {
     name: "Cedric",
     avatar: "J",
-    title: "Ingénieur logiciel",
+    title: "Ingénieur Pétrolier",
     description: "C'est la meilleure application que j'ai jamais utilisée !",
   },
   {
@@ -22,7 +22,7 @@ const testimonials = [
     description: "Cette application a changé ma vie, je ne peux pas imaginer travailler sans elle !",
   },
   {
-    name: "Mary",
+    name: "Divine",
     avatar: "M",
     title: "Directrice financière",
     description: "Le meilleur de sa catégorie, vaut vraiment l'abonnement premium !",
