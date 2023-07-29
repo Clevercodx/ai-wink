@@ -12,7 +12,7 @@ const font = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
   title: 'Ai-Wink',
-  description: 'AI Platform',
+  description: 'Plateforme AI',
 }
 
 export default async function RootLayout({

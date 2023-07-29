@@ -45,7 +45,7 @@ const VideoPage = () => {
       if (error?.response?.status === 403) {
         proModal.onOpen();
       } else {
-        toast.error("Something went wrong.");
+        toast.error("Une erreur s'est produite.");
       }
     } finally {
       router.refresh();
@@ -55,8 +55,8 @@ const VideoPage = () => {
   return ( 
     <div>
       <Heading
-        title="Video Generation"
-        description="Turn your prompt into video."
+        title="Génération de Vidéo"
+        description="Transformez votre indication en vidéo."
         icon={FileAudio}
         iconColor="text-orange-700"
         bgColor="bg-orange-700/10"
@@ -86,7 +86,7 @@ const VideoPage = () => {
                     <Input
                       className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                       disabled={isLoading} 
-                      placeholder="Clown fish swimming in a coral reef" 
+                      placeholder="Un poisson-clown nageant dans un récif de corail" 
                       {...field}
                     />
                   </FormControl>
@@ -94,7 +94,7 @@ const VideoPage = () => {
               )}
             />
             <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
-              Generate
+              Générer
             </Button>
           </form>
         </Form>
@@ -104,7 +104,7 @@ const VideoPage = () => {
           </div>
         )}
         {!video && !isLoading && (
-          <Empty label="No video files generated." />
+          <Empty label="Aucun fichier vidéo généré." />
         )}
         {video && (
           <video controls className="w-full aspect-video mt-8 rounded-lg border bg-black">

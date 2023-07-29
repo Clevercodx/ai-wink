@@ -51,7 +51,7 @@ const CodePage = () => {
       if (error?.response?.status === 403) {
         proModal.onOpen();
       } else {
-        toast.error("Something went wrong.");
+        toast.error("Une erreur s'est produite.");
       }
     } finally {
       router.refresh();
@@ -61,8 +61,8 @@ const CodePage = () => {
   return ( 
     <div>
       <Heading
-        title="Code Generation"
-        description="Generate code using descriptive text."
+        title="Génération de code"
+        description="Générer du code à l'aide de texte descriptif."
         icon={Code}
         iconColor="text-green-700"
         bgColor="bg-green-700/10"
@@ -93,7 +93,7 @@ const CodePage = () => {
                       <Input
                         className="border-0 outline-none focus-visible:ring-0 focus-visible:ring-transparent"
                         disabled={isLoading} 
-                        placeholder="Simple toggle button using react hooks." 
+                        placeholder="Bouton de basculement simple à l'aide de react hooks." 
                         {...field}
                       />
                     </FormControl>
@@ -101,7 +101,7 @@ const CodePage = () => {
                 )}
               />
               <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
-                Generate
+                Générer
               </Button>
             </form>
           </Form>
@@ -113,7 +113,7 @@ const CodePage = () => {
             </div>
           )}
           {messages.length === 0 && !isLoading && (
-            <Empty label="No conversation started." />
+            <Empty label="Aucune conversation commencée." />
           )}
           <div className="flex flex-col-reverse gap-y-4">
             {messages.map((message) => (
@@ -147,4 +147,3 @@ const CodePage = () => {
 }
  
 export default CodePage;
-

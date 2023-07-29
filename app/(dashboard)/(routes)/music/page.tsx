@@ -46,7 +46,7 @@ const MusicPage = () => {
       if (error?.response?.status === 403) {
         proModal.onOpen();
       } else {
-        toast.error("Something went wrong.");
+        toast.error("Quelque chose s'est mal passé.");
       }
     } finally {
       router.refresh();
@@ -57,7 +57,7 @@ const MusicPage = () => {
     <div>
       <Heading
         title="Music Generation"
-        description="Turn your prompt into music."
+        description="Transformez votre suggestion en musique."
         icon={Music}
         iconColor="text-emerald-500"
         bgColor="bg-emerald-500/10"
@@ -95,7 +95,7 @@ const MusicPage = () => {
               )}
             />
             <Button className="col-span-12 lg:col-span-2 w-full" type="submit" disabled={isLoading} size="icon">
-              Generate
+              Générer
             </Button>
           </form>
         </Form>
@@ -105,7 +105,7 @@ const MusicPage = () => {
           </div>
         )}
         {!music && !isLoading && (
-          <Empty label="No music generated." />
+          <Empty label="Aucune musique générée." />
         )}
         {music && (
           <audio controls className="w-full mt-8">

@@ -24,7 +24,6 @@ export const FreeCounter = ({
   if (!mounted) {
     return null;
   }
-  
 
   if (isPro) {
     return null;
@@ -36,16 +35,16 @@ export const FreeCounter = ({
         <CardContent className="py-6">
           <div className="text-center text-sm text-white mb-4 space-y-2">
             <p>
-              {apiLimitCount} / {MAX_FREE_COUNTS} Free Generations
+              {apiLimitCount} / {MAX_FREE_COUNTS} Générations Gratuites
             </p>
             <Progress className="h-3" value={(apiLimitCount / MAX_FREE_COUNTS) * 100} />
           </div>
           <Button onClick={proModal.onOpen} variant="premium" className="w-full">
-            Upgrade
+            Passer à la version Premium
             <Zap className="w-4 h-4 ml-2 fill-white" />
           </Button>
         </CardContent>
       </Card>
     </div>
-  )
-}
+  );
+};

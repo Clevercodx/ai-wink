@@ -2,10 +2,10 @@
 
 import { Empty } from "@/components/ui/empty";
 
-const Error = () => {
+const Erreur = () => {
   return ( 
-    <Empty label="Something went wrong." />
+    <Empty label="Quelque chose s'est mal passé." />
    );
 }
  
-export default Error;
+export default Erreur;

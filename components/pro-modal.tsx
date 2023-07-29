@@ -31,7 +31,7 @@ export const ProModal = () => {
 
       window.location.href = response.data.url;
     } catch (error) {
-      toast.error("Something went wrong");
+      toast.error("Une erreur s'est produite");
     } finally {
       setLoading(false);
     }
@@ -43,7 +43,7 @@ export const ProModal = () => {
         <DialogHeader>
           <DialogTitle className="flex justify-center items-center flex-col gap-y-4 pb-2">
             <div className="flex items-center gap-x-2 font-bold text-xl">
-              Upgrade to Genius
+              Passer à Genius
               <Badge variant="premium" className="uppercase text-sm py-1">
                 pro
               </Badge>
@@ -67,7 +67,7 @@ export const ProModal = () => {
         </DialogHeader>
         <DialogFooter>
           <Button disabled={loading} onClick={onSubscribe} size="lg" variant="premium" className="w-full">
-            Upgrade
+            Passer à la version Pro
             <Zap className="w-4 h-4 ml-2 fill-white" />
           </Button>
         </DialogFooter>

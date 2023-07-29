@@ -10,15 +10,15 @@ const SettingsPage = async () => {
   return ( 
     <div>
       <Heading
-        title="Settings"
-        description="Manage account settings."
+        title="Paramètres"
+        description="Gérer les paramètres du compte."
         icon={Settings}
         iconColor="text-gray-700"
         bgColor="bg-gray-700/10"
       />
       <div className="px-4 lg:px-8 space-y-4">
         <div className="text-muted-foreground text-sm">
-          {isPro ? "You are currently on a Pro plan." : "You are currently on a free plan."}
+          {isPro ? "Vous êtes actuellement sur un abonnement Pro." : "Vous êtes actuellement sur un abonnement gratuit."}
         </div>
         <SubscriptionButton isPro={isPro} />
       </div>
@@ -27,4 +27,3 @@ const SettingsPage = async () => {
 }
  
 export default SettingsPage;
-
