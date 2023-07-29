@@ -1,5 +1,5 @@
 "use client";
-
+import { UserButton } from "@clerk/nextjs";
 import { ArrowRight } from "lucide-react";
 import { useRouter } from "next/navigation";
 
